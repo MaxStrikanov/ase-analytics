@@ -1,0 +1,19 @@
+@page {
+    size: A4 landscape;
+    margin: 10mm;
+}
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    #report-root {
+        page-break-inside: avoid;
+    }
+}
